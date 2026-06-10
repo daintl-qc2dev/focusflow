@@ -54,3 +54,14 @@ function formatCurrency(amount) {
 }
 console.log(formatCurrency(173468999));
 
+function isValidEmail(email) {
+    // Kiểm tra xem email có chứa ký tự '@' và dấu '.' không
+    if (email.includes('@') && email.includes('.')) {
+        return `Email ${email} da dung chuan`;
+    }
+    return `Email ${email} da sai`;
+}
+console.log(isValidEmail("abc@gmail.com"));
+console.log(isValidEmail("abcgmail.com"));
+
+
