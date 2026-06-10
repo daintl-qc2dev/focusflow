@@ -16,6 +16,10 @@ let hasPet = false;
 let futureProject; // undefined
 let currentCar = null; // Hiện tại chưa có xe
 
+// ==========================================
+// BÀI TẬP 2: VIẾT CÁC HÀM CƠ BẢN
+// ==========================================
+
 // 1. Hàm tính tổng
 function add(a, b) {
     return a + b;
@@ -40,3 +44,13 @@ function isAdult(age) {
 }
 
 console.log("Da la nguoi on chua: ", isAdult(age))
+
+// ==========================================
+// BÀI TẬP 3: Learn about Conditionals, loops, array basics
+// ==========================================
+function formatCurrency(amount) {
+    // Sử dụng hàm có sẵn của JS để định dạng tiền tệ theo chuẩn VN
+    return amount.toLocaleString('vi-VN') + ' đ';
+}
+console.log(formatCurrency(173468999));
+
