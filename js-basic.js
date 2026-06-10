@@ -32,7 +32,11 @@ console.log("Họ và tên là:", getFullName(firstName, lastName));
 
 // 3. Hàm kiểm tra người lớn
 function isAdult(age) {
-    return age >= 18;
+    if (age >= 18) {
+        return "Nguoi lon roi nha";
+    } else {
+        return "Em con be lam em oi";
+    }
 }
 
 console.log("Da la nguoi on chua: ", isAdult(age))
