@@ -1,6 +1,6 @@
 // Kiểu String
-const firstName = "Nguyen";
-const lastName = "Dai";
+const firstName = "Dai";
+const lastName = "Nguyen";
 let job = "QC Engineer";
 
 // Kiểu Number
@@ -15,3 +15,8 @@ let hasPet = false;
 // Kiểu Undefined và Null
 let futureProject; // undefined
 let currentCar = null; // Hiện tại chưa có xe
+
+function add(a, b){
+    return a + b;
+}
+console.log(add(-5,9));
