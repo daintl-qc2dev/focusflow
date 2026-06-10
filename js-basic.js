@@ -16,7 +16,14 @@ let hasPet = false;
 let futureProject; // undefined
 let currentCar = null; // Hiện tại chưa có xe
 
-function add(a, b){
+// 1. Hàm tính tổng
+function add(a, b) {
     return a + b;
 }
-console.log(add(-5,9));
+
+// 2. Hàm lấy tên đầy đủ
+function getFullName(firstName, lastName) {
+    return firstName + " " + lastName;
+}
+
+console.log("Họ và tên là:", getFullName(firstName, lastName));
