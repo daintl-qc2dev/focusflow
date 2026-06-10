@@ -34,3 +34,5 @@ console.log("Họ và tên là:", getFullName(firstName, lastName));
 function isAdult(age) {
     return age >= 18;
 }
+
+console.log("Da la nguoi on chua: ", isAdult(age))
