@@ -21,9 +21,16 @@ function add(a, b) {
     return a + b;
 }
 
+console.log("Tong 2 so la: ", add(5, 7));
+
 // 2. Hàm lấy tên đầy đủ
 function getFullName(firstName, lastName) {
     return firstName + " " + lastName;
 }
 
 console.log("Họ và tên là:", getFullName(firstName, lastName));
+
+// 3. Hàm kiểm tra người lớn
+function isAdult(age) {
+    return age >= 18;
+}
