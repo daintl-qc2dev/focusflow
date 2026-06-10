@@ -64,4 +64,14 @@ function isValidEmail(email) {
 console.log(isValidEmail("abc@gmail.com"));
 console.log(isValidEmail("abcgmail.com"));
 
+function changeCelsiusToFahrenheit(celsius) {
+    // Doi do C sang do F
+    return celsius * 1.8 + 32;
+}
+console.log(changeCelsiusToFahrenheit(36));
 
+function reverseString(str) {
+    // Dao chuoi ky tu
+    return str.split('').reverse().join('');
+}
+console.log(reverseString("Nguyen Thi Le Dai")); 
