@@ -36,14 +36,11 @@ console.log("Họ và tên là:", getFullName(firstName, lastName));
 
 // 3. Hàm kiểm tra người lớn
 function isAdult(age) {
-    if (age >= 18) {
-        return "Nguoi lon roi nha";
-    } else {
-        return "Em con be lam em oi";
-    }
+    return age >= 18;
 }
 
-console.log("Da la nguoi on chua: ", isAdult(age))
+console.log(isAdult(26));
+console.log(isAdult(15));
 
 // ==========================================
 // BÀI TẬP 3: Learn about Conditionals, loops, array basics
@@ -57,9 +54,9 @@ console.log(formatCurrency(173468999));
 function isValidEmail(email) {
     // Kiểm tra xem email có chứa ký tự '@' và dấu '.' không
     if (email.includes('@') && email.includes('.')) {
-        return `Email ${email} da dung chuan`;
+        return true;
     }
-    return `Email ${email} da sai`;
+    return false;
 }
 console.log(isValidEmail("abc@gmail.com"));
 console.log(isValidEmail("abcgmail.com"));
@@ -75,3 +72,18 @@ function reverseString(str) {
     return str.split('').reverse().join('');
 }
 console.log(reverseString("Nguyen Thi Le Dai")); 
+
+function findMax(arr) {
+    // Hàm findMax(arr): Tìm số lớn nhất trong mảng (Dùng vòng lặp)
+    if (arr.length === 0) return undefined;
+    
+    let max = arr[0]; // Giả định số đầu tiên là lớn nhất
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]; // Cập nhật nếu tìm thấy số lớn hơn
+        }
+    }
+    return max;
+}
+
+console.log(findMax([3, 9, 2, 99, 5]));
