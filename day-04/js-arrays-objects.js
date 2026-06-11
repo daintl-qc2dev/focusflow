@@ -34,3 +34,12 @@ function updateUser(id, updateData) {
 console.log("--- 2. Update data user ---");
 updateUser(2,{name: "Nguyen Van Hop", age: 16});
 console.log(users);
+
+// 3. Hàm getUserEmails(): Lấy ra danh sách chứa TẤT CẢ email của user (Dùng map)
+function getUserEmails() {
+    // Biến đổi mảng Object thành một mảng chỉ chứa các Email
+    return users.map(user => user.email);
+}
+
+console.log("\n--- 3. Danh sách tất cả Email ---");
+console.log(getUserEmails());
