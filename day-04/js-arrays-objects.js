@@ -43,3 +43,15 @@ function getUserEmails() {
 
 console.log("\n--- 3. Danh sách tất cả Email ---");
 console.log(getUserEmails());
+
+// 4. Hàm getAdultNames(): Lấy danh sách TÊN của các user từ 18 tuổi trở lên 
+//    👉 Ứng dụng kỹ thuật Chain (Kết hợp) giữa filter và map
+// ==========================================
+function getAdultNames() {
+    return users
+        .filter(user => user.age >= 18)  // Bước 1: Lọc ra các user có age >= 18
+        .map(user => user.name);         // Bước 2: Chỉ lấy ra thuộc tính name của họ
+}
+
+console.log("\n--- 4. Danh sách nguoi >= 18t ---");
+console.log(getAdultNames());
