@@ -39,7 +39,8 @@ console.log(checkGrade(9));
 function dayOfWeek(n) {
     switch (n) {
         case 1:
-            return "Chủ Nhật";
+            console.log("Thứ Hai");
+            break;
         case 2:
             console.log("Thứ Hai");
             break;
