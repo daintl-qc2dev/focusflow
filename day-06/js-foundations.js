@@ -15,32 +15,31 @@ function sumToN(n){
     for (let i = n; i > 0; i--){
         sum = sum + i;
     }
-    console.log(" sumToN(4) la: ",sum);
+    return sum;
 }
 
-sumToN(4);
+console.log(` sumToN(4) la: ${sumToN(4)}`);
 
 //checkGrade
 function checkGrade(score){
     if (score >= 9)
-        console.log("Xuat sac");
+        return "Xuat sac";
     else if (score >= 8)
-        console.log("Gioi");
+        return "Gioi";
     else if (score >= 6.5)
-        console.log("Kha");
+        return "Kha";
     else if (score >= 5)
-        console.log("Trung binh");
+        return "Trung binh";
     else
-        console.log("Yeu");
+        return "Yeu";
 }
-checkGrade(9);
+console.log(checkGrade(9));
 
 //dayOfWeek
 function dayOfWeek(n) {
     switch (n) {
         case 1:
-            console.log("Chủ Nhật");
-            break;
+            return "Chủ Nhật";
         case 2:
             console.log("Thứ Hai");
             break;
