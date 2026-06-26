@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ "main", "master" ]
 
+# Thiết lập mặc định: Mọi lệnh "run" sẽ được chạy bên trong thư mục first-react-app
+defaults:
+  run:
+    working-directory: first-react-app
 
 jobs:
   build-and-test:
