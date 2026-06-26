@@ -22,7 +22,7 @@ jobs:
     - name: Cài đặt thư viện dependencies
       # Ép lệnh chạy ngay bên trong folder first-react-app
       working-directory: first-react-app
-      run: npm install
+      run: npm ci
 
     - name: Kiểm tra lỗi Code (Lint)
       working-directory: first-react-app
