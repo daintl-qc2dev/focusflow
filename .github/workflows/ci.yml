@@ -21,13 +21,13 @@ jobs:
 
     - name: Cài đặt thư viện dependencies
       # Ép lệnh chạy ngay bên trong folder first-react-app
-      working-directory: ./first-react-app
+      working-directory: first-react-app
       run: npm install
 
     - name: Kiểm tra lỗi Code (Lint)
-      working-directory: ./first-react-app
+      working-directory: first-react-app
       run: npm run lint --if-present
 
     - name: Biên dịch dự án (Build thử)
-      working-directory: ./first-react-app
+      working-directory: first-react-app
       run: npm run build --if-present
