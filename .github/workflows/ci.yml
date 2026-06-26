@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Checkout mã nguồn
-      uses: actions/checkout@v4 # Đã bỏ phần submodules độc hại
+      uses: actions/checkout@v4
 
     - name: Cài đặt Node.js
       uses: actions/setup-node@v4
@@ -20,9 +20,14 @@ jobs:
         node-version: '22'
 
     - name: Cài đặt thư viện dependencies
+      # Ép lệnh chạy ngay bên trong folder first-react-app
       working-directory: first-react-app
-      run: npm install
+      run: npm ci
+
+    - name: Kiểm tra lỗi Code (Lint)
+      working-directory: first-react-app
+      run: npm run lint
 
     - name: Biên dịch dự án (Build thử)
       working-directory: first-react-app
-      run: npm run build --if-present
+      run: npm run build
