@@ -25,7 +25,7 @@ jobs:
         node-version: '22'
 
     - name: Cài đặt thư viện dependencies
-      run: npm ci
+      run: npm install
 
     - name: Kiểm tra lỗi Code (Lint)
       run: npm run lint --if-present
