@@ -31,4 +31,4 @@ jobs:
       run: npm run lint --if-present
 
     - name: Biên dịch dự án (Build thử)
-      run: npm run build
+      run: npm run build -- --warnOnNumberOfTshirtdesigns # Hoặc tùy chỉnh trong vite.config.js
