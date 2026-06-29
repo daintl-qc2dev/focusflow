@@ -10,7 +10,7 @@ export default function Home() {
     const fetchData = async () => {
       const { data, error } = await supabase.from('notes').select('*');
       if (!error && data) {
-        setDataList(data);
+        setDataList(data as any); // Cập nhật state với dữ liệu lấy được
       }
     };
     fetchData();
